@@ -99,3 +99,74 @@ header {
     }
   }
 }
+
+.section1 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/images/robots/backgroundSection1.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  @media (max-width: 640px) {
+    height: 80vh;
+  }
+
+  .text {
+    width: 55%;
+    color: #fff;
+
+    @media (max-width: 640px) {
+      width: 65%;
+    }
+
+    span {
+      font-size: 9rem;
+      color: #94b3b3;
+    }
+
+    h1 {
+      font-size: 6rem;
+      margin: 0 0 1rem 0.5rem;
+    }
+    p {
+      width: 80%;
+      font-size: 1.5rem;
+      margin-left: 0.5rem;
+    }
+
+    @media (max-width: 640px) {
+      span {
+        display: none;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (min-width: 641px) and (max-width: 800px) {
+      span {
+        display: block;
+        font-size: 6rem;
+      }
+      h1 {
+        font-size: 4rem;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (min-width: 801px) and (max-width: 1024px) {
+      h1 {
+        font-size: 5rem;
+      }
+    }
+  }
+}

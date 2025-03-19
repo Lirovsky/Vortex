@@ -87,4 +87,71 @@ header .container .navbar .menuIcon {
   }
 }
 
+.section1 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/images/robots/backgroundSection1.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+@media (max-width: 640px) {
+  .section1 {
+    height: 80vh;
+  }
+}
+.section1 .text {
+  width: 55%;
+  color: #fff;
+}
+@media (max-width: 640px) {
+  .section1 .text {
+    width: 65%;
+  }
+}
+.section1 .text span {
+  font-size: 9rem;
+  color: #94b3b3;
+}
+.section1 .text h1 {
+  font-size: 6rem;
+  margin: 0 0 1rem 0.5rem;
+}
+.section1 .text p {
+  width: 80%;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+@media (max-width: 640px) {
+  .section1 .text span {
+    display: none;
+  }
+  .section1 .text h1 {
+    font-size: 2rem;
+  }
+  .section1 .text p {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 641px) and (max-width: 800px) {
+  .section1 .text span {
+    display: block;
+    font-size: 6rem;
+  }
+  .section1 .text h1 {
+    font-size: 4rem;
+  }
+  .section1 .text p {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 801px) and (max-width: 1024px) {
+  .section1 .text h1 {
+    font-size: 5rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
