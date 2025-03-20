@@ -154,4 +154,56 @@ header .container .navbar .menuIcon {
   }
 }
 
+.section2 {
+  width: 90%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+@media (max-width: 800px) {
+  .section2 {
+    flex-direction: column;
+    margin: 100px auto;
+  }
+}
+.section2 .text {
+  width: 50%;
+}
+@media (max-width: 800px) {
+  .section2 .text {
+    width: 100%;
+  }
+}
+.section2 .text h1 {
+  font-size: 2.5rem;
+}
+.section2 .text h2 {
+  font-size: 1rem;
+}
+.section2 .text p {
+  font-size: 1.2rem;
+  font-weight: 100;
+  line-height: 1.7rem;
+}
+@media (max-width: 640px) {
+  .section2 .text p {
+    font-size: 1rem;
+  }
+}
+.section2 .image {
+  width: 45%;
+}
+@media (max-width: 800px) {
+  .section2 .image {
+    width: 100%;
+  }
+}
+.section2 .image img {
+  max-width: 100%;
+  height: auto;
+}
+
 /*# sourceMappingURL=style.css.map */

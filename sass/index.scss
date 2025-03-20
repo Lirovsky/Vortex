@@ -170,3 +170,59 @@ header {
     }
   }
 }
+
+.section2 {
+  width: 90%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    margin: 100px auto;
+  }
+
+  .text {
+    width: 50%;
+
+    @media (max-width: 800px) {
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      font-weight: 100;
+      line-height: 1.7rem;
+    }
+
+    @media (max-width: 640px) {
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .image {
+    width: 45%;
+
+    @media (max-width: 800px) {
+      width: 100%;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
