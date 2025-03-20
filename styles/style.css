@@ -166,7 +166,7 @@ header .container .navbar .menuIcon {
 @media (max-width: 800px) {
   .section2 {
     flex-direction: column;
-    margin: 100px auto;
+    margin: 100px auto 250px auto;
   }
 }
 .section2 .text {
@@ -204,6 +204,66 @@ header .container .navbar .menuIcon {
 .section2 .image img {
   max-width: 100%;
   height: auto;
+}
+
+.section3 {
+  height: auto;
+  padding: 50px 0;
+  background-image: linear-gradient(to right, #1a1a1a 0, #1a1a1a 50%, #b9dfdf 50%);
+  color: #fff;
+}
+.section3 .container {
+  width: 80%;
+  margin: auto;
+}
+.section3 .container h1 {
+  font-size: 2rem;
+}
+.section3 .container p {
+  width: 40%;
+  font-style: italic;
+  line-height: 2rem;
+}
+@media (max-width: 768px) {
+  .section3 .container p {
+    width: 100%;
+  }
+}
+.section3 .container .wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+@media (max-width: 500px) {
+  .section3 .container .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 501px) and (max-width: 768px) {
+  .section3 .container .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.section3 .container .wrapper .wrapper-image {
+  width: auto;
+  height: 150px;
+  display: initial;
+  overflow: hidden;
+  background-color: #707070;
+}
+@media (max-width: 500px) {
+  .section3 .container .wrapper .wrapper-image {
+    height: auto;
+  }
+}
+@media (min-width: 501px) and (max-width: 800px) {
+  .section3 .container .wrapper .wrapper-image {
+    height: auto;
+  }
+}
+.section3 .container .wrapper .wrapper-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
