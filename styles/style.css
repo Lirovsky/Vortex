@@ -209,7 +209,7 @@ header .container .navbar .menuIcon {
 .section3 {
   height: auto;
   padding: 50px 0;
-  background-image: linear-gradient(to right, #1a1a1a 0, #1a1a1a 50%, #b9dfdf 50%);
+  background-image: linear-gradient(to right, #1a1a1a 0, #1a1a1a 50%, #9abfbf 50%);
   color: #fff;
 }
 .section3 .container {
@@ -232,6 +232,7 @@ header .container .navbar .menuIcon {
 .section3 .container .wrapper {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  padding-top: 20px;
 }
 @media (max-width: 500px) {
   .section3 .container .wrapper {
@@ -264,6 +265,104 @@ header .container .navbar .menuIcon {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.section4 {
+  height: auto;
+  padding: 50px 0;
+}
+.section4 .container {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+@media (max-width: 768px) {
+  .section4 .container {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 769px) and (max-width: 1023px) {
+  .section4 .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  .section4 .container {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+.section4 .container .left {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+.section4 .container .left .title {
+  font-size: 2rem;
+  color: #fff;
+  background-color: #aea16a;
+  padding-left: 2rem;
+}
+.section4 .container .left .image {
+  width: 100%;
+  height: 100%;
+}
+.section4 .container .left .image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.section4 .container .right {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+@media (min-width: 640px) {
+  .section4 .container .right {
+    flex-direction: row;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .section4 .container .right {
+    grid-template-columns: 1fr;
+  }
+}
+.section4 .container .right .people {
+  width: 100%;
+  height: 100%;
+}
+.section4 .container .right .people img {
+  width: 100%;
+  height: 100%;
+}
+.section4 .container .right .text {
+  background: #9abfbf;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1.9rem;
+}
+.section4 .button {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.section4 .button button {
+  background: #9abfbf;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 500;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.section4 .button button:hover {
+  background: #b4cfcf;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
