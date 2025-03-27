@@ -494,3 +494,68 @@ header {
     }
   }
 }
+
+.section7 {
+  background-color: #000;
+
+  .container {
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    @media (max-width: 768px) {
+      gap: 0px;
+    }
+
+    .bar {
+      span {
+        font-size: 14rem;
+        color: #aea16a;
+      }
+
+      @media (max-width: 768px) {
+        span {
+          font-size: 20rem;
+          font-weight: 100;
+        }
+      }
+    }
+    .text {
+      color: #fff;
+
+      img {
+        width: 4rem;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        font-size: 1rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        font-weight: 100;
+        line-height: 1.7rem;
+      }
+
+      @media (max-width: 640px) {
+        p {
+          font-size: 1rem;
+        }
+      }
+
+      .author {
+        text-align: end;
+        font-weight: 700;
+      }
+    }
+  }
+}

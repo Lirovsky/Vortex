@@ -463,4 +463,58 @@ header .container .navbar .menuIcon {
   object-fit: cover;
 }
 
+.section7 {
+  background-color: #000;
+}
+.section7 .container {
+  width: 90%;
+  margin: auto;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+@media (max-width: 768px) {
+  .section7 .container {
+    gap: 0px;
+  }
+}
+.section7 .container .bar span {
+  font-size: 14rem;
+  color: #aea16a;
+}
+@media (max-width: 768px) {
+  .section7 .container .bar span {
+    font-size: 20rem;
+    font-weight: 100;
+  }
+}
+.section7 .container .text {
+  color: #fff;
+}
+.section7 .container .text img {
+  width: 4rem;
+}
+.section7 .container .text h1 {
+  font-size: 2.5rem;
+}
+.section7 .container .text h2 {
+  font-size: 1rem;
+}
+.section7 .container .text p {
+  font-size: 1.2rem;
+  font-weight: 100;
+  line-height: 1.7rem;
+}
+@media (max-width: 640px) {
+  .section7 .container .text p {
+    font-size: 1rem;
+  }
+}
+.section7 .container .text .author {
+  text-align: end;
+  font-weight: 700;
+}
+
 /*# sourceMappingURL=style.css.map */
