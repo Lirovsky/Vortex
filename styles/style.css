@@ -249,7 +249,6 @@ header .container .navbar .menuIcon {
   height: 150px;
   display: initial;
   overflow: hidden;
-  background-color: #707070;
 }
 @media (max-width: 500px) {
   .section3 .container .wrapper .wrapper-image {
@@ -405,6 +404,63 @@ header .container .navbar .menuIcon {
   font-size: 1.2rem;
   font-weight: 200;
   line-height: 35px;
+}
+
+.section6 .container {
+  width: 80%;
+  margin: auto;
+  padding: 60px 0;
+}
+.section6 .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.section6 .text h2 {
+  color: #aea16a;
+  font-size: 3rem;
+}
+.section6 .text p {
+  max-width: 80%;
+  font-size: 1.2rem;
+  font-weight: 200;
+  line-height: 30px;
+  margin-bottom: 60px;
+}
+@media (max-width: 640px) {
+  .section6 .text p {
+    max-width: 100%;
+  }
+}
+.section6 .wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 20px;
+}
+@media (max-width: 640px) {
+  .section6 .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+.section6 .wrapper .wrapper-image {
+  width: auto;
+}
+@media (max-width: 500px) {
+  .section6 .wrapper .wrapper-image {
+    height: auto;
+  }
+}
+@media (min-width: 501px) and (max-width: 800px) {
+  .section6 .wrapper .wrapper-image {
+    height: auto;
+  }
+}
+.section6 .wrapper .wrapper-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
