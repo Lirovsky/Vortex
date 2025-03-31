@@ -1,0 +1,236 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 80px;
+
+  .container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      width: 70px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      img {
+        width: 100%;
+        height: 50%;
+      }
+      h1 {
+        color: #222;
+      }
+    }
+    .navbar {
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      gap: 40px;
+
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 40px;
+
+        li {
+          text-decoration: none;
+
+          a {
+            text-decoration: none;
+            color: #000;
+            font-size: 1.1rem;
+            font-weight: 300;
+
+            &:hover {
+              color: #707070;
+            }
+          }
+        }
+      }
+      .menuIcon {
+        display: none;
+        cursor: pointer;
+      }
+    }
+    @media (max-width: 768px) {
+      .navbar {
+        ul {
+          position: fixed;
+          top: 0;
+          left: -100%;
+          height: 100vh;
+          width: 260px;
+          margin: 0;
+          padding-top: 40px;
+          display: flex;
+          justify-items: center;
+          flex-direction: column;
+          background-color: rgba(0, 0, 0, 0.3);
+          backdrop-filter: blur(10px);
+          transition: all 0.8s;
+
+          li {
+            a {
+              color: #fff;
+
+              &:hover {
+                color: #e0e0e0;
+              }
+            }
+          }
+        }
+        .open {
+          left: 0;
+        }
+        .menuIcon {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.section1 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/images/robots/backgroundSection1.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  @media (max-width: 640px) {
+    height: 80vh;
+  }
+
+  .text {
+    width: 55%;
+    color: #fff;
+
+    @media (max-width: 640px) {
+      width: 65%;
+    }
+
+    span {
+      font-size: 9rem;
+      color: #94b3b3;
+    }
+
+    h1 {
+      font-size: 6rem;
+      margin: 0 0 1rem 0.5rem;
+    }
+    p {
+      width: 80%;
+      font-size: 1.5rem;
+      margin-left: 0.5rem;
+    }
+
+    @media (max-width: 640px) {
+      span {
+        display: none;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (min-width: 641px) and (max-width: 800px) {
+      span {
+        display: block;
+        font-size: 6rem;
+      }
+      h1 {
+        font-size: 4rem;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (min-width: 801px) and (max-width: 1024px) {
+      h1 {
+        font-size: 5rem;
+      }
+    }
+  }
+}
+
+main {
+  .container {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 50px;
+
+    @media (max-width: 640px) {
+      grid-template-columns: 1fr;
+    }
+
+    @media (min-width: 641px) and (max-width: 1024px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .post {
+      width: 100%;
+      margin: 50px 0;
+      height: auto;
+
+      img {
+        width: 100%;
+        height: 50%;
+      }
+    }
+  }
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+
+  .footer-top {
+    background-color: #192f6a;
+    padding: 3rem 0;
+
+    p {
+      width: 80%;
+      margin: auto;
+      font-weight: 200;
+      font-size: 1.1rem;
+    }
+    div {
+      margin-top: 50px;
+
+      img {
+        width: 20px;
+        padding-right: 10px;
+        transition: all 0.5s;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+  .footer-bottom {
+    background-color: #000000;
+    padding: 20px 0;
+  }
+}

@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "dev": "sass --watch sass/index.scss:styles/style.css"
+    "dev": "sass --watch sass/index.scss:styles/style.css",
+    "devblog": "sass --watch sass/blog.scss:styles/blog.css"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
