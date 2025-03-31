@@ -523,7 +523,7 @@ header .container .navbar .menuIcon {
 .section8 .container {
   width: 90%;
   margin: auto;
-  padding: 40px 0;
+  padding: 80px 0;
   display: flex;
   align-items: center;
 }
@@ -567,6 +567,92 @@ header .container .navbar .menuIcon {
 .section8 .container .text button:hover {
   background: #7f9191;
   color: #fff;
+}
+
+.section9 {
+  background-color: #fff;
+}
+.section9 .container {
+  width: 90%;
+  margin: auto;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .section9 .container {
+    flex-direction: column;
+  }
+}
+.section9 .container .image {
+  width: 100%;
+}
+@media (min-width: 769px) and (max-width: 1023px) {
+  .section9 .container .image {
+    width: auto;
+  }
+}
+.section9 .container .image img {
+  width: 100%;
+}
+.section9 .container .text {
+  padding: 40px;
+  width: 80%;
+}
+.section9 .container .text h3 {
+  margin-bottom: -10px;
+  letter-spacing: 2px;
+}
+.section9 .container .text h2 {
+  font-size: 2rem;
+}
+.section9 .container .text p {
+  font-size: 1.2rem;
+  font-weight: 100;
+  line-height: 1.7rem;
+}
+.section9 .container .text button {
+  background: #86a6a6;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 500;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.section9 .container .text button:hover {
+  background: #7f9191;
+  color: #fff;
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+}
+footer .footer-top {
+  background-color: #192f6a;
+  padding: 3rem 0;
+}
+footer .footer-top p {
+  width: 80%;
+  margin: auto;
+  font-weight: 200;
+  font-size: 1.1rem;
+}
+footer .footer-top div {
+  margin-top: 50px;
+}
+footer .footer-top div img {
+  width: 20px;
+  padding-right: 10px;
+  transition: all 0.5s;
+}
+footer .footer-top div img:hover {
+  transform: scale(1.2);
+}
+footer .footer-bottom {
+  background-color: #000000;
+  padding: 20px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
