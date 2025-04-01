@@ -87,6 +87,36 @@ header .container .navbar .menuIcon {
   }
 }
 
+footer {
+  color: #fff;
+  text-align: center;
+}
+footer .footer-top {
+  background-color: #0f2254;
+  padding: 3rem 0;
+}
+footer .footer-top p {
+  width: 80%;
+  margin: auto;
+  font-weight: 200;
+  font-size: 1.1rem;
+}
+footer .footer-top div {
+  margin-top: 50px;
+}
+footer .footer-top div img {
+  width: 20px;
+  padding-right: 10px;
+  transition: all 0.5s;
+}
+footer .footer-top div img:hover {
+  transform: scale(1.2);
+}
+footer .footer-bottom {
+  background-color: #000000;
+  padding: 20px 0;
+}
+
 .section1 {
   width: 100%;
   height: 100vh;
@@ -623,36 +653,6 @@ header .container .navbar .menuIcon {
 .section9 .container .text button:hover {
   background: #7f9191;
   color: #fff;
-}
-
-footer {
-  color: #fff;
-  text-align: center;
-}
-footer .footer-top {
-  background-color: #192f6a;
-  padding: 3rem 0;
-}
-footer .footer-top p {
-  width: 80%;
-  margin: auto;
-  font-weight: 200;
-  font-size: 1.1rem;
-}
-footer .footer-top div {
-  margin-top: 50px;
-}
-footer .footer-top div img {
-  width: 20px;
-  padding-right: 10px;
-  transition: all 0.5s;
-}
-footer .footer-top div img:hover {
-  transform: scale(1.2);
-}
-footer .footer-bottom {
-  background-color: #000000;
-  padding: 20px 0;
 }
 
 /*# sourceMappingURL=style.css.map */

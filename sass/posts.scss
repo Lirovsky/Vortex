@@ -1,0 +1,27 @@
+@import "./partials/reset";
+@import "./partials/header";
+@import "./partials/footer";
+
+main {
+  .container {
+    width: 80%;
+    margin: auto;
+
+    padding: 50px 0;
+
+    img {
+      width: 100%;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      margin-top: 20px;
+    }
+
+    span {
+      color: #0080ff;
+    }
+  }
+}
