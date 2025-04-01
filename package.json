@@ -3,7 +3,8 @@
     "dev": "sass --watch sass/index.scss:styles/style.css",
     "devblog": "sass --watch sass/blog.scss:styles/blog.css",
     "devposts": "sass --watch sass/posts.scss:styles/posts.css",
-    "devsobre": "sass --watch sass/sobre.scss:styles/sobre.css"
+    "devsobre": "sass --watch sass/sobre.scss:styles/sobre.css",
+    "devcontato": "sass --watch sass/contato.scss:styles/contato.css"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"

@@ -1,0 +1,172 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 80px;
+}
+header .container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container .logo {
+  width: 70px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .container .logo img {
+  width: 100%;
+  height: 50%;
+}
+header .container .logo h1 {
+  color: #222;
+}
+header .container .navbar {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 40px;
+}
+header .container .navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+header .container .navbar ul li {
+  text-decoration: none;
+}
+header .container .navbar ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+header .container .navbar ul li a:hover {
+  color: #707070;
+}
+header .container .navbar .menuIcon {
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  header .container .navbar ul {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 260px;
+    margin: 0;
+    padding-top: 40px;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    transition: all 0.8s;
+  }
+  header .container .navbar ul li a {
+    color: #fff;
+  }
+  header .container .navbar ul li a:hover {
+    color: #e0e0e0;
+  }
+  header .container .navbar .open {
+    left: 0;
+  }
+  header .container .navbar .menuIcon {
+    display: block;
+  }
+}
+
+.section1 {
+  background-image: repeating-linear-gradient(90deg, black, black 35%, #cccc00 35%, #cccc00 65%, black 65%);
+  color: #fff;
+  height: calc(100vh - 80px);
+}
+@media (max-width: 1024px) {
+  .section1 {
+    height: auto;
+  }
+}
+.section1 .container {
+  width: 80%;
+  margin: auto;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@media (max-width: 768px) {
+  .section1 .container {
+    flex-direction: column;
+  }
+}
+.section1 .container .left {
+  width: 40%;
+}
+@media (max-width: 768px) {
+  .section1 .container .left {
+    width: 100%;
+  }
+}
+.section1 .container .left h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.section1 .container .left .social {
+  margin-top: 100px;
+}
+.section1 .container .left .social img {
+  width: 20px;
+  padding-right: 10px;
+  transition: all 0.5s;
+}
+.section1 .container .left .social img:hover {
+  transform: scale(1.2);
+}
+.section1 .container .right {
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .section1 .container .right {
+    width: 100%;
+  }
+}
+.section1 .container .right h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.section1 .container .right form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.section1 .container .right form input,
+.section1 .container .right form textarea {
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+.section1 .container .right form input::placeholder,
+.section1 .container .right form textarea::placeholder {
+  color: rgb(186, 186, 186);
+}
+.section1 .container .right form button {
+  width: 150px;
+  border: solid;
+  border-color: #ffffff;
+  background-color: transparent;
+  padding: 10px;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=contato.css.map */
