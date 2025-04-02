@@ -39,12 +39,17 @@ header .container .navbar {
 header .container .navbar ul {
   list-style: none;
   display: flex;
-  gap: 40px;
+  align-items: flex-start;
+  gap: 25px;
 }
 header .container .navbar ul li {
   text-decoration: none;
 }
+header .container .navbar ul li:hover {
+  transform: scale(1.05);
+}
 header .container .navbar ul li a {
+  padding: 10px;
   text-decoration: none;
   color: #000;
   font-size: 1.1rem;
@@ -73,7 +78,12 @@ header .container .navbar .menuIcon {
     backdrop-filter: blur(10px);
     transition: all 0.8s;
   }
+  header .container .navbar ul li {
+    width: 90%;
+  }
   header .container .navbar ul li a {
+    display: block;
+    padding: 10px;
     color: #fff;
   }
   header .container .navbar ul li a:hover {
@@ -92,7 +102,7 @@ footer {
   text-align: center;
 }
 footer .footer-top {
-  background-color: #0f2254;
+  background-color: #0a36ae;
   padding: 3rem 0;
 }
 footer .footer-top p {
@@ -113,17 +123,14 @@ footer .footer-top div img:hover {
   transform: scale(1.2);
 }
 footer .footer-bottom {
-  background-color: #000000;
+  background-color: #333333;
   padding: 20px 0;
 }
 
 .section1 {
   width: 100%;
   height: 100vh;
-  background-image: url(../assets/images/robots/backgroundSection1.jpg);
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: no-repeat bottom/cover url("../assets/images/robots/backgroundSection1.jpg");
   display: flex;
   justify-content: end;
   align-items: center;
@@ -139,7 +146,7 @@ footer .footer-bottom {
 }
 @media (max-width: 640px) {
   .section1 .text {
-    width: 65%;
+    width: 70%;
   }
 }
 .section1 .text span {
@@ -186,8 +193,8 @@ footer .footer-bottom {
 
 .section2 {
   width: 90%;
-  height: 100vh;
   margin: auto;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -239,11 +246,11 @@ footer .footer-bottom {
 .section3 {
   height: auto;
   padding: 50px 0;
-  background-image: linear-gradient(to right, #1a1a1a 0, #1a1a1a 50%, #9abfbf 50%);
+  background-image: linear-gradient(to right, #333333 0, #333333 50%, #9abfbf 50%);
   color: #fff;
 }
 .section3 .container {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 .section3 .container h1 {
@@ -267,11 +274,13 @@ footer .footer-bottom {
 @media (max-width: 500px) {
   .section3 .container .wrapper {
     grid-template-columns: 1fr;
+    gap: 10px;
   }
 }
-@media (min-width: 501px) and (max-width: 768px) {
+@media (min-width: 501px) and (max-width: 800px) {
   .section3 .container .wrapper {
     grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
   }
 }
 .section3 .container .wrapper .wrapper-image {
@@ -280,12 +289,7 @@ footer .footer-bottom {
   display: initial;
   overflow: hidden;
 }
-@media (max-width: 500px) {
-  .section3 .container .wrapper .wrapper-image {
-    height: auto;
-  }
-}
-@media (min-width: 501px) and (max-width: 800px) {
+@media (max-width: 800px) {
   .section3 .container .wrapper .wrapper-image {
     height: auto;
   }
@@ -301,10 +305,10 @@ footer .footer-bottom {
   padding: 50px 0;
 }
 .section4 .container {
-  width: 80%;
+  width: 90%;
   margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
 @media (max-width: 768px) {
@@ -314,7 +318,7 @@ footer .footer-bottom {
 }
 @media (min-width: 769px) and (max-width: 1023px) {
   .section4 .container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 1024px) {
@@ -381,15 +385,18 @@ footer .footer-bottom {
   justify-content: center;
   margin-top: 40px;
 }
-.section4 .button button {
-  background: #9abfbf;
+.section4 .button a {
+  text-decoration: none;
   border: none;
   padding: 10px 20px;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 2px;
   transition: all 0.5s;
   cursor: pointer;
+  color: #000;
+  background: #9abfbf;
 }
-.section4 .button button:hover {
+.section4 .button a:hover {
   background: #b4cfcf;
   color: #fff;
 }
@@ -398,11 +405,11 @@ footer .footer-bottom {
   background-color: #333333;
 }
 .section5 .container {
-  width: 80%;
+  width: 90%;
   margin: auto;
   padding: 80px 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 80px;
 }
 @media (max-width: 768px) {
@@ -412,7 +419,7 @@ footer .footer-bottom {
 }
 @media (min-width: 769px) and (max-width: 1023px) {
   .section5 .container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .section5 .container .card .image {
@@ -437,7 +444,7 @@ footer .footer-bottom {
 }
 
 .section6 .container {
-  width: 80%;
+  width: 90%;
   margin: auto;
   padding: 60px 0;
 }
@@ -454,10 +461,10 @@ footer .footer-bottom {
 }
 .section6 .text p {
   max-width: 80%;
+  margin-bottom: 60px;
   font-size: 1.2rem;
   font-weight: 200;
   line-height: 30px;
-  margin-bottom: 60px;
 }
 @media (max-width: 640px) {
   .section6 .text p {
@@ -472,20 +479,11 @@ footer .footer-bottom {
 @media (max-width: 640px) {
   .section6 .wrapper {
     grid-template-columns: 1fr;
+    gap: 10px;
   }
 }
 .section6 .wrapper .wrapper-image {
   width: auto;
-}
-@media (max-width: 500px) {
-  .section6 .wrapper .wrapper-image {
-    height: auto;
-  }
-}
-@media (min-width: 501px) and (max-width: 800px) {
-  .section6 .wrapper .wrapper-image {
-    height: auto;
-  }
 }
 .section6 .wrapper .wrapper-image img {
   height: 100%;
@@ -526,12 +524,6 @@ footer .footer-bottom {
 .section7 .container .text img {
   width: 4rem;
 }
-.section7 .container .text h1 {
-  font-size: 2.5rem;
-}
-.section7 .container .text h2 {
-  font-size: 1rem;
-}
 .section7 .container .text p {
   font-size: 1.2rem;
   font-weight: 100;
@@ -545,10 +537,11 @@ footer .footer-bottom {
 .section7 .container .text .author {
   text-align: end;
   font-weight: 700;
+  font-size: 1.5rem;
 }
 
 .section8 {
-  background-color: #abd3d3;
+  background-color: #9abfbf;
 }
 .section8 .container {
   width: 90%;
@@ -565,11 +558,6 @@ footer .footer-bottom {
 .section8 .container .image {
   width: 100%;
 }
-@media (min-width: 769px) and (max-width: 1023px) {
-  .section8 .container .image {
-    width: auto;
-  }
-}
 .section8 .container .image img {
   width: 100%;
 }
@@ -584,17 +572,20 @@ footer .footer-bottom {
   font-size: 1.2rem;
   font-weight: 100;
   line-height: 1.7rem;
+  padding-bottom: 20px;
 }
-.section8 .container .text button {
-  background: #86a6a6;
-  color: #fff;
+.section8 .container .text a {
+  text-decoration: none;
   border: none;
   padding: 10px 20px;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 2px;
   transition: all 0.5s;
   cursor: pointer;
+  background: #b4cfcf;
+  color: #fff;
 }
-.section8 .container .text button:hover {
+.section8 .container .text a:hover {
   background: #7f9191;
   color: #fff;
 }
@@ -617,11 +608,6 @@ footer .footer-bottom {
 .section9 .container .image {
   width: 100%;
 }
-@media (min-width: 769px) and (max-width: 1023px) {
-  .section9 .container .image {
-    width: auto;
-  }
-}
 .section9 .container .image img {
   width: 100%;
 }
@@ -640,18 +626,21 @@ footer .footer-bottom {
   font-size: 1.2rem;
   font-weight: 100;
   line-height: 1.7rem;
+  padding-bottom: 20px;
 }
-.section9 .container .text button {
-  background: #86a6a6;
-  color: #fff;
+.section9 .container .text a {
+  text-decoration: none;
   border: none;
   padding: 10px 20px;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 2px;
   transition: all 0.5s;
   cursor: pointer;
-}
-.section9 .container .text button:hover {
   background: #7f9191;
+  color: #fff;
+}
+.section9 .container .text a:hover {
+  background: #b4cfcf;
   color: #fff;
 }
 

@@ -32,12 +32,18 @@ header {
       ul {
         list-style: none;
         display: flex;
-        gap: 40px;
+        align-items: flex-start;
+        gap: 25px;
 
         li {
           text-decoration: none;
 
+          &:hover {
+            transform: scale(1.05);
+          }
+
           a {
+            padding: 10px;
             text-decoration: none;
             color: #000;
             font-size: 1.1rem;
@@ -72,7 +78,10 @@ header {
           transition: all 0.8s;
 
           li {
+            width: 90%;
             a {
+              display: block;
+              padding: 10px;
               color: #fff;
 
               &:hover {

@@ -39,12 +39,17 @@ header .container .navbar {
 header .container .navbar ul {
   list-style: none;
   display: flex;
-  gap: 40px;
+  align-items: flex-start;
+  gap: 25px;
 }
 header .container .navbar ul li {
   text-decoration: none;
 }
+header .container .navbar ul li:hover {
+  transform: scale(1.05);
+}
 header .container .navbar ul li a {
+  padding: 10px;
   text-decoration: none;
   color: #000;
   font-size: 1.1rem;
@@ -73,7 +78,12 @@ header .container .navbar .menuIcon {
     backdrop-filter: blur(10px);
     transition: all 0.8s;
   }
+  header .container .navbar ul li {
+    width: 90%;
+  }
   header .container .navbar ul li a {
+    display: block;
+    padding: 10px;
     color: #fff;
   }
   header .container .navbar ul li a:hover {
@@ -92,7 +102,7 @@ footer {
   text-align: center;
 }
 footer .footer-top {
-  background-color: #0f2254;
+  background-color: #0a36ae;
   padding: 3rem 0;
 }
 footer .footer-top p {
@@ -113,7 +123,7 @@ footer .footer-top div img:hover {
   transform: scale(1.2);
 }
 footer .footer-bottom {
-  background-color: #000000;
+  background-color: #333333;
   padding: 20px 0;
 }
 
@@ -125,17 +135,16 @@ footer .footer-bottom {
   align-items: center;
 }
 .section1 .container .text {
+  width: 70%;
+  text-align: center;
   font-size: 1.2rem;
   line-height: 30px;
   font-weight: 300;
-  width: 70%;
-  margin: auto;
-  text-align: center;
   margin: 50px 0;
 }
 .section1 .container .images {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   gap: 20px;
 }
@@ -174,27 +183,11 @@ footer .footer-bottom {
     gap: 0px;
   }
 }
-.section2 .container .bar span {
-  font-size: 14rem;
-  color: #aea16a;
-}
-@media (max-width: 768px) {
-  .section2 .container .bar span {
-    font-size: 20rem;
-    font-weight: 100;
-  }
-}
 .section2 .container .text {
   color: #fff;
 }
 .section2 .container .text img {
   width: 4rem;
-}
-.section2 .container .text h1 {
-  font-size: 2.5rem;
-}
-.section2 .container .text h2 {
-  font-size: 1rem;
 }
 .section2 .container .text p {
   font-size: 1.2rem;
@@ -209,6 +202,7 @@ footer .footer-bottom {
 .section2 .container .text .author {
   text-align: end;
   font-weight: 700;
+  font-size: 1.5rem;
 }
 
 .section3 {
@@ -230,21 +224,12 @@ footer .footer-bottom {
 .section3 .container .image {
   width: 100%;
 }
-@media (min-width: 769px) and (max-width: 1023px) {
-  .section3 .container .image {
-    width: auto;
-  }
-}
 .section3 .container .image img {
   width: 100%;
 }
 .section3 .container .text {
   padding: 40px;
   width: 80%;
-}
-.section3 .container .text h3 {
-  margin-bottom: -10px;
-  letter-spacing: 2px;
 }
 .section3 .container .text h2 {
   font-size: 2rem;
@@ -265,7 +250,7 @@ footer .footer-bottom {
 }
 .section4 .container .images {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-items: center;
   gap: 20px;

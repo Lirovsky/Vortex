@@ -39,12 +39,17 @@ header .container .navbar {
 header .container .navbar ul {
   list-style: none;
   display: flex;
-  gap: 40px;
+  align-items: flex-start;
+  gap: 25px;
 }
 header .container .navbar ul li {
   text-decoration: none;
 }
+header .container .navbar ul li:hover {
+  transform: scale(1.05);
+}
 header .container .navbar ul li a {
+  padding: 10px;
   text-decoration: none;
   color: #000;
   font-size: 1.1rem;
@@ -73,7 +78,12 @@ header .container .navbar .menuIcon {
     backdrop-filter: blur(10px);
     transition: all 0.8s;
   }
+  header .container .navbar ul li {
+    width: 90%;
+  }
   header .container .navbar ul li a {
+    display: block;
+    padding: 10px;
     color: #fff;
   }
   header .container .navbar ul li a:hover {
@@ -123,7 +133,12 @@ header .container .navbar .menuIcon {
   font-weight: 300;
 }
 .section1 .container .left .social {
-  margin-top: 100px;
+  margin-top: 50px;
+}
+@media (min-width: 768px) {
+  .section1 .container .left .social {
+    margin-top: 100px;
+  }
 }
 .section1 .container .left .social img {
   width: 20px;
@@ -132,6 +147,14 @@ header .container .navbar .menuIcon {
 }
 .section1 .container .left .social img:hover {
   transform: scale(1.2);
+}
+.section1 .container .left p {
+  padding-bottom: 0px;
+}
+@media (max-width: 768px) {
+  .section1 .container .left p {
+    padding-bottom: 50px;
+  }
 }
 .section1 .container .right {
   width: 50%;
@@ -149,6 +172,10 @@ header .container .navbar .menuIcon {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.section1 .container .right form label {
+  font-size: 1.1rem;
+  margin-bottom: -15px;
 }
 .section1 .container .right form input,
 .section1 .container .right form textarea {

@@ -1,28 +1,32 @@
-@import "./partials/reset";
-@import "./partials/header";
-@import "./partials/footer";
+@use "./partials/reset";
+@use "./partials/header";
+@use "./partials/footer";
+@use "./partials/variables";
+
+@mixin container {
+  width: 90%;
+  margin: auto;
+}
 
 .section1 {
   .container {
-    width: 90%;
-    margin: auto;
+    @include container;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     .text {
+      width: 70%;
+      text-align: center;
       font-size: 1.2rem;
       line-height: 30px;
       font-weight: 300;
-      width: 70%;
-      margin: auto;
-      text-align: center;
       margin: 50px 0;
     }
 
     .images {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
       justify-items: center;
       gap: 20px;
 
@@ -50,8 +54,7 @@
   background-color: #000;
 
   .container {
-    width: 90%;
-    margin: auto;
+    @include container;
     padding: 40px 0;
 
     display: flex;
@@ -63,32 +66,11 @@
       gap: 0px;
     }
 
-    .bar {
-      span {
-        font-size: 14rem;
-        color: #aea16a;
-      }
-
-      @media (max-width: 768px) {
-        span {
-          font-size: 20rem;
-          font-weight: 100;
-        }
-      }
-    }
     .text {
       color: #fff;
 
       img {
         width: 4rem;
-      }
-
-      h1 {
-        font-size: 2.5rem;
-      }
-
-      h2 {
-        font-size: 1rem;
       }
 
       p {
@@ -106,6 +88,7 @@
       .author {
         text-align: end;
         font-weight: 700;
+        font-size: 1.5rem;
       }
     }
   }
@@ -116,8 +99,7 @@
   color: #fff;
 
   .container {
-    width: 90%;
-    margin: auto;
+    @include container;
     padding: 80px 0;
     display: flex;
     align-items: center;
@@ -129,10 +111,6 @@
     .image {
       width: 100%;
 
-      @media (min-width: 769px) and (max-width: 1023px) {
-        width: auto;
-      }
-
       img {
         width: 100%;
       }
@@ -141,11 +119,6 @@
     .text {
       padding: 40px;
       width: 80%;
-
-      h3 {
-        margin-bottom: -10px;
-        letter-spacing: 2px;
-      }
 
       h2 {
         font-size: 2rem;
@@ -162,8 +135,7 @@
 
 .section4 {
   .container {
-    width: 90%;
-    margin: auto;
+    @include container;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -171,7 +143,7 @@
 
     .images {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
       justify-items: center;
       align-items: center;
       gap: 20px;

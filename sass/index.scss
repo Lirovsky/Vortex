@@ -1,14 +1,27 @@
-@import "./partials/reset";
-@import "./partials/header";
-@import "./partials/footer";
+@use "./partials/reset";
+@use "./partials/header";
+@use "./partials/footer";
+@use "./partials/variables";
+
+@mixin container {
+  width: 90%;
+  margin: auto;
+}
+
+@mixin button {
+  text-decoration: none;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
 
 .section1 {
   width: 100%;
   height: 100vh;
-  background-image: url(../assets/images/robots/backgroundSection1.jpg);
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: no-repeat bottom/cover url("../assets/images/robots/backgroundSection1.jpg");
   display: flex;
   justify-content: end;
   align-items: center;
@@ -22,7 +35,7 @@
     color: #fff;
 
     @media (max-width: 640px) {
-      width: 65%;
+      width: 70%;
     }
 
     span {
@@ -74,9 +87,8 @@
 }
 
 .section2 {
-  width: 90%;
+  @include container;
   height: 100vh;
-  margin: auto;
 
   display: flex;
   align-items: center;
@@ -133,12 +145,16 @@
 .section3 {
   height: auto;
   padding: 50px 0;
-  background-image: linear-gradient(to right, #1a1a1a 0, #1a1a1a 50%, #9abfbf 50%);
+  background-image: linear-gradient(
+    to right,
+    variables.$primary-color 0,
+    variables.$primary-color 50%,
+    variables.$second-color 50%
+  );
   color: #fff;
 
   .container {
-    width: 80%;
-    margin: auto;
+    @include container;
 
     h1 {
       font-size: 2rem;
@@ -161,10 +177,12 @@
 
       @media (max-width: 500px) {
         grid-template-columns: 1fr;
+        gap: 10px;
       }
 
-      @media (min-width: 501px) and (max-width: 768px) {
+      @media (min-width: 501px) and (max-width: 800px) {
         grid-template-columns: repeat(2, 1fr);
+        gap: 2px;
       }
 
       .wrapper-image {
@@ -173,11 +191,7 @@
         display: initial;
         overflow: hidden;
 
-        @media (max-width: 500px) {
-          height: auto;
-        }
-
-        @media (min-width: 501px) and (max-width: 800px) {
+        @media (max-width: 800px) {
           height: auto;
         }
 
@@ -196,10 +210,10 @@
   padding: 50px 0;
 
   .container {
-    width: 80%;
-    margin: auto;
+    @include container;
+
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 
     @media (max-width: 768px) {
@@ -207,7 +221,7 @@
     }
 
     @media (min-width: 769px) and (max-width: 1023px) {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
     }
 
     @media (min-width: 1024px) {
@@ -223,7 +237,7 @@
       .title {
         font-size: 2rem;
         color: #fff;
-        background-color: #aea16a;
+        background-color: variables.$third-color;
         padding-left: 2rem;
       }
       .image {
@@ -262,7 +276,7 @@
       }
 
       .text {
-        background: #9abfbf;
+        background: variables.$second-color;
         display: flex;
         align-items: center;
         padding: 20px;
@@ -277,16 +291,13 @@
     justify-content: center;
     margin-top: 40px;
 
-    button {
-      background: #9abfbf;
-      border: none;
-      padding: 10px 20px;
-      font-weight: 500;
-      transition: all 0.5s;
-      cursor: pointer;
+    a {
+      @include button;
+      color: #000;
+      background: variables.$second-color;
 
       &:hover {
-        background: #b4cfcf;
+        background: variables.$fourth-color;
         color: #fff;
       }
     }
@@ -294,14 +305,14 @@
 }
 
 .section5 {
-  background-color: #333333;
+  background-color: variables.$primary-color;
 
   .container {
-    width: 80%;
-    margin: auto;
+    @include container;
+
     padding: 80px 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 80px;
 
     @media (max-width: 768px) {
@@ -309,7 +320,7 @@
     }
 
     @media (min-width: 769px) and (max-width: 1023px) {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
     }
 
     .card {
@@ -323,11 +334,13 @@
           width: 100%;
         }
       }
+
       h2 {
-        color: #aea16a;
+        color: variables.$third-color;
         font-size: 2rem;
         font-weight: 400;
       }
+
       p {
         color: #fff;
         font-size: 1.2rem;
@@ -340,8 +353,7 @@
 
 .section6 {
   .container {
-    width: 80%;
-    margin: auto;
+    @include container;
     padding: 60px 0;
   }
   .text {
@@ -352,16 +364,16 @@
     text-align: center;
 
     h2 {
-      color: #aea16a;
+      color: variables.$third-color;
       font-size: 3rem;
     }
 
     p {
       max-width: 80%;
+      margin-bottom: 60px;
       font-size: 1.2rem;
       font-weight: 200;
       line-height: 30px;
-      margin-bottom: 60px;
 
       @media (max-width: 640px) {
         max-width: 100%;
@@ -375,18 +387,11 @@
 
     @media (max-width: 640px) {
       grid-template-columns: 1fr;
+      gap: 10px;
     }
 
     .wrapper-image {
       width: auto;
-
-      @media (max-width: 500px) {
-        height: auto;
-      }
-
-      @media (min-width: 501px) and (max-width: 800px) {
-        height: auto;
-      }
 
       img {
         height: 100%;
@@ -401,10 +406,9 @@
   background-color: #000;
 
   .container {
-    width: 90%;
-    margin: auto;
-    padding: 40px 0;
+    @include container;
 
+    padding: 40px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -417,7 +421,7 @@
     .bar {
       span {
         font-size: 14rem;
-        color: #aea16a;
+        color: variables.$third-color;
       }
 
       @media (max-width: 768px) {
@@ -432,14 +436,6 @@
 
       img {
         width: 4rem;
-      }
-
-      h1 {
-        font-size: 2.5rem;
-      }
-
-      h2 {
-        font-size: 1rem;
       }
 
       p {
@@ -457,17 +453,18 @@
       .author {
         text-align: end;
         font-weight: 700;
+        font-size: 1.5rem;
       }
     }
   }
 }
 
 .section8 {
-  background-color: #abd3d3;
+  background-color: variables.$second-color;
 
   .container {
-    width: 90%;
-    margin: auto;
+    @include container;
+
     padding: 80px 0;
     display: flex;
     align-items: center;
@@ -478,10 +475,6 @@
 
     .image {
       width: 100%;
-
-      @media (min-width: 769px) and (max-width: 1023px) {
-        width: auto;
-      }
 
       img {
         width: 100%;
@@ -500,19 +493,16 @@
         font-size: 1.2rem;
         font-weight: 100;
         line-height: 1.7rem;
+        padding-bottom: 20px;
       }
 
-      button {
-        background: #86a6a6;
+      a {
+        @include button;
+        background: variables.$fourth-color;
         color: #fff;
-        border: none;
-        padding: 10px 20px;
-        font-weight: 500;
-        transition: all 0.5s;
-        cursor: pointer;
 
         &:hover {
-          background: #7f9191;
+          background: variables.$fifth-color;
           color: #fff;
         }
       }
@@ -524,8 +514,8 @@
   background-color: #fff;
 
   .container {
-    width: 90%;
-    margin: auto;
+    @include container;
+
     padding: 80px 0;
     display: flex;
     align-items: center;
@@ -536,10 +526,6 @@
 
     .image {
       width: 100%;
-
-      @media (min-width: 769px) and (max-width: 1023px) {
-        width: auto;
-      }
 
       img {
         width: 100%;
@@ -563,19 +549,16 @@
         font-size: 1.2rem;
         font-weight: 100;
         line-height: 1.7rem;
+        padding-bottom: 20px;
       }
 
-      button {
-        background: #86a6a6;
+      a {
+        @include button;
+        background: variables.$fifth-color;
         color: #fff;
-        border: none;
-        padding: 10px 20px;
-        font-weight: 500;
-        transition: all 0.5s;
-        cursor: pointer;
 
         &:hover {
-          background: #7f9191;
+          background: variables.$fourth-color;
           color: #fff;
         }
       }
