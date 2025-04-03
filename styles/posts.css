@@ -39,12 +39,17 @@ header .container .navbar {
 header .container .navbar ul {
   list-style: none;
   display: flex;
-  gap: 40px;
+  align-items: flex-start;
+  gap: 25px;
 }
 header .container .navbar ul li {
   text-decoration: none;
 }
+header .container .navbar ul li:hover {
+  transform: scale(1.05);
+}
 header .container .navbar ul li a {
+  padding: 10px;
   text-decoration: none;
   color: #000;
   font-size: 1.1rem;
@@ -73,7 +78,12 @@ header .container .navbar .menuIcon {
     backdrop-filter: blur(10px);
     transition: all 0.8s;
   }
+  header .container .navbar ul li {
+    width: 90%;
+  }
   header .container .navbar ul li a {
+    display: block;
+    padding: 10px;
     color: #fff;
   }
   header .container .navbar ul li a:hover {
@@ -92,7 +102,7 @@ footer {
   text-align: center;
 }
 footer .footer-top {
-  background-color: #0f2254;
+  background-color: #7f9191;
   padding: 3rem 0;
 }
 footer .footer-top p {
@@ -100,21 +110,29 @@ footer .footer-top p {
   margin: auto;
   font-weight: 200;
   font-size: 1.1rem;
+  line-height: 30px;
 }
 footer .footer-top div {
   margin-top: 50px;
 }
-footer .footer-top div img {
+footer .footer-top div a {
+  text-decoration: none;
+}
+footer .footer-top div a img {
   width: 20px;
   padding-right: 10px;
   transition: all 0.5s;
 }
-footer .footer-top div img:hover {
+footer .footer-top div a img:hover {
   transform: scale(1.2);
 }
 footer .footer-bottom {
-  background-color: #000000;
+  background-color: #333333;
   padding: 20px 0;
+}
+footer .footer-bottom p {
+  font-weight: 200;
+  font-size: 1.1rem;
 }
 
 main .container {
@@ -129,7 +147,8 @@ main .container h2 {
   font-size: 2rem;
 }
 main .container p {
-  margin-top: 20px;
+  margin-top: 30px;
+  font-size: 1.1rem;
 }
 main .container span {
   color: #0080ff;

@@ -1,6 +1,6 @@
-@import "./partials/reset";
-@import "./partials/header";
-@import "./partials/footer";
+@use "./partials/reset";
+@use "./partials/header";
+@use "./partials/footer";
 
 main {
   .container {
@@ -17,7 +17,8 @@ main {
       font-size: 2rem;
     }
     p {
-      margin-top: 20px;
+      margin-top: 30px;
+      font-size: 1.1rem;
     }
 
     span {

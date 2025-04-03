@@ -7,9 +7,8 @@ main {
     width: 80%;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    // padding-bottom: 50px;
 
     @media (max-width: 640px) {
       grid-template-columns: 1fr;
@@ -55,10 +54,12 @@ main {
       }
 
       a {
-        color: #0080ff;
+        color: #0091ff;
         font-size: 1.1rem;
+        text-decoration: none;
+
         &:hover {
-          text-decoration: none;
+          color: rgb(0, 111, 222);
         }
       }
     }
