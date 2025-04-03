@@ -1,13 +1,14 @@
 @use "./partials/reset";
 @use "./partials/header";
+@use "./partials/variables";
 
 .section1 {
   background-image: repeating-linear-gradient(
-    90deg,
+    -45deg,
     black,
     black 35%,
-    #cccc00 35%,
-    #cccc00 65%,
+    variables.$fifth-color 35%,
+    variables.$fifth-color 65%,
     black 65%
   );
   color: #fff;

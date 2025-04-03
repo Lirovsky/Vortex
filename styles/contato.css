@@ -98,7 +98,7 @@ header .container .navbar .menuIcon {
 }
 
 .section1 {
-  background-image: repeating-linear-gradient(90deg, black, black 35%, #cccc00 35%, #cccc00 65%, black 65%);
+  background-image: repeating-linear-gradient(-45deg, black, black 35%, #7f9191 35%, #7f9191 65%, black 65%);
   color: #fff;
   height: calc(100vh - 80px);
 }
