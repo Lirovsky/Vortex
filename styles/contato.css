@@ -140,12 +140,15 @@ header .container .navbar .menuIcon {
     margin-top: 100px;
   }
 }
-.section1 .container .left .social img {
+.section1 .container .left .social a {
+  text-decoration: none;
+}
+.section1 .container .left .social a img {
   width: 20px;
   padding-right: 10px;
   transition: all 0.5s;
 }
-.section1 .container .left .social img:hover {
+.section1 .container .left .social a img:hover {
   transform: scale(1.2);
 }
 .section1 .container .left p {
