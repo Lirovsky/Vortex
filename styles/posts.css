@@ -42,6 +42,12 @@ header .container .navbar ul {
   align-items: flex-start;
   gap: 25px;
 }
+@media (max-width: 768px) {
+  header .container .navbar ul {
+    visibility: hidden;
+    display: none;
+  }
+}
 header .container .navbar ul li {
   text-decoration: none;
 }
@@ -58,12 +64,28 @@ header .container .navbar ul li a {
 header .container .navbar ul li a:hover {
   color: #707070;
 }
-header .container .navbar .menuIcon {
+header .container .navbar .mobileMenuIcon {
+  background: transparent;
+  border: none;
+  outline: none;
   display: none;
   cursor: pointer;
 }
+header .container .navbar .mobileMenuIcon:focus {
+  background: none;
+  outline: none;
+}
+header .container .mobile-menu {
+  display: none;
+}
 @media (max-width: 768px) {
-  header .container .navbar ul {
+  header .container .navbar a {
+    display: none;
+  }
+  header .container .navbar .mobileMenuIcon {
+    display: block;
+  }
+  header .container .mobile-menu ul {
     position: fixed;
     top: 0;
     left: -100%;
@@ -74,26 +96,33 @@ header .container .navbar .menuIcon {
     display: flex;
     justify-items: center;
     flex-direction: column;
+    gap: 25px;
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     transition: all 0.8s;
   }
-  header .container .navbar ul li {
+  header .container .mobile-menu ul li {
     width: 90%;
+    list-style: none;
   }
-  header .container .navbar ul li a {
+  header .container .mobile-menu ul li a {
+    text-decoration: none;
     display: block;
     padding: 10px;
     color: #fff;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 5px;
   }
-  header .container .navbar ul li a:hover {
+  header .container .mobile-menu ul li a:hover {
     color: #e0e0e0;
   }
-  header .container .navbar .open {
-    left: 0;
+  header .container .mobile-menu ul li a:focus {
+    border: 2px solid #fff;
   }
-  header .container .navbar .menuIcon {
+  header .container .display {
     display: block;
+    visibility: visible;
   }
 }
 
@@ -145,6 +174,9 @@ main .container img {
 }
 main .container h2 {
   font-size: 2rem;
+}
+main .container .date {
+  color: #7f9191;
 }
 main .container p {
   margin-top: 30px;

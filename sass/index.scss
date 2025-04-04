@@ -297,12 +297,11 @@
 
     a {
       @include button;
-      color: #000;
       background: variables.$second-color;
-
+      color: #000;
       &:hover {
-        background: variables.$fourth-color;
         color: #fff;
+        background: variables.$fourth-color;
       }
     }
   }

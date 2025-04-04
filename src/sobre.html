@@ -31,13 +31,13 @@
           <h1>Vortex</h1>
         </div>
 
-        <nav class="navbar">
+        <div class="mobile-menu">
           <ul>
             <li>
-              <a href="../index.html">Página Inicial</a>
+              <a href="../index.html" id="buttonFocusMobile">Página Inicial</a>
             </li>
             <li>
-              <a href="./blog/blog.html">Blog</a>
+              <a href="./blog.html">Blog</a>
             </li>
             <li>
               <a href="./sobre.html">Sobre</a>
@@ -46,9 +46,31 @@
               <a href="./contato.html">Contato</a>
             </li>
           </ul>
-          <div class="menuIcon" onclick="showSidebar()">
+        </div>
+
+        <nav class="navbar">
+          <ul>
+            <li>
+              <a href="../index.html">Página Inicial</a>
+            </li>
+            <li>
+              <a href="./blog.html">Blog</a>
+            </li>
+            <li>
+              <a href="./sobre.html">Sobre</a>
+            </li>
+            <li>
+              <a href="./contato.html">Contato</a>
+            </li>
+          </ul>
+          <button
+            class="mobileMenuIcon"
+            id="focusButton"
+            aria-label="menu"
+            onclick="showSidebar2()"
+          >
             <img src="../assets/images/icons/menu.svg" alt="" />
-          </div>
+          </button>
         </nav>
       </div>
     </header>

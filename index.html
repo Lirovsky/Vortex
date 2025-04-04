@@ -31,13 +31,13 @@
           <h1>Vortex</h1>
         </div>
 
-        <nav class="navbar">
+        <div class="mobile-menu">
           <ul>
             <li>
-              <a href="./index.html">Página Inicial</a>
+              <a href="./index.html" id="buttonFocusMobile">Página Inicial</a>
             </li>
             <li>
-              <a href="./src/blog/blog.html">Blog</a>
+              <a href="./src/blog.html">Blog</a>
             </li>
             <li>
               <a href="./src/sobre.html">Sobre</a>
@@ -46,10 +46,28 @@
               <a href="./src/contato.html">Contato</a>
             </li>
           </ul>
-          <div class="menuIcon" onclick="showSidebar()">
+        </div>
+
+        <nav class="navbar">
+          <ul>
+            <li>
+              <a href="./index.html">Página Inicial</a>
+            </li>
+            <li>
+              <a href="./src/blog.html">Blog</a>
+            </li>
+            <li>
+              <a href="./src/sobre.html">Sobre</a>
+            </li>
+            <li>
+              <a href="./src/contato.html">Contato</a>
+            </li>
+          </ul>
+          <button class="mobileMenuIcon" id="focusButton"  aria-label="menu" onclick="showSidebar()">
             <img src="./assets/images/icons/menu.svg" alt="" />
-          </div>
+          </button>
         </nav>
+
       </div>
     </header>
     <main>
@@ -126,8 +144,9 @@
           </div>
           
         </div>
-        <div class="button">
-            <a href="https://www.androidauthority.com/new-robots-942422/" target="_blank">SABER MAIS</a>
+        <div class="button" >
+          <a href="https://www.androidauthority.com/new-robots-942422/" target="_blank"  aria-label="Saber mais sobre a CES 2019" >SABER MAIS</a>
+          </button>
         </div>
       </section>
       <section class="section5">
@@ -174,7 +193,7 @@
               <img src="./assets/images/robots/trophyRobot.jpg" alt="Robô com rosto humano segurando um troféu">
             </div>
             <div class="wrapper-image">
-              <img src="./assets/images/cards/card1.jpg" alt="Um robozinho Spark desenvolvido para recepcionar pessoas. Tem a aparência de um liquidificador com braços.">
+              <img src="./assets/images/cards/card1.jpg" alt="Um robozinho Spark branco desenvolvido para recepcionar pessoas.">
             </div>
             <div class="wrapper-image">
               <img src="./assets/images/robots/checkedRobot.jpg" alt="Robô com aparência de arquitéto, utilizando uma planilha e capacete amarelo.">
@@ -197,7 +216,7 @@
               <p>
                 Precisamos saber quais são os recursos da lua. Temos grandes evidências agora por causa de diferentes tipos de radar e análise espectroscópica que as pessoas são capazes de fazer. Mas realmente precisamos visitar lá, e podemos fazer isso com uma nave robô sem nenhum problema.
               </p>
-              <p class="author">- Jeff Bezos -</p>
+              <h3 class="author">- Jeff Bezos -</h3>
             </div>
 
         </div>
@@ -214,7 +233,7 @@
             <p>
               O número de robôs no mundo hoje está se aproximando de 1.000.000, com quase metade desse número no Japão e apenas 15% nos Estados Unidos. Algumas décadas atrás, 90% dos robôs eram usados na fabricação de automóveis, normalmente na montagem de linhas, fazendo uma variedade de tarefas repetitivas. Hoje, apenas 50% estão em fábricas de automóveis, com a outra metade espalhada por outras fábricas e muitas outras indústrias.
             </p>
-            <a href="https://www.zendesk.com.br/blog/inteligencia-artificial-no-futuro-do-trabalho/" target="_blank">SABER MAIS</a>
+            <a href="https://www.zendesk.com.br/blog/inteligencia-artificial-no-futuro-do-trabalho/" target="_blank" aria-label="Saber mais sobre IA no trabalho">SABER MAIS</a>
           </div>
         </div>
       </section>
@@ -233,7 +252,7 @@
             <p>
               Quantos querem se sujeitar à doença do pulmão preto e a uma série de outros problemas de saúde decorrentes desse trabalho? É por isso que as cidades de mineração de carvão estão morrendo. Os jovens dessas cidades estão começando a ter melhores perspectivas de emprego. E a tecnologia está assumindo o controle do que resta da indústria de mineração. A energia verde está assumindo, e com ela, uma série de novos empregos e carreiras limpos. É a marcha da civilização que nunca cessará.
             </p>
-            <a href="https://blog.engdb.com.br/inteligencia-artificial-na-mineracao/" target="_blank">SABER MAIS</a>
+            <a href="https://blog.engdb.com.br/inteligencia-artificial-na-mineracao/" target="_blank" aria-label="Saber mais sobre IA na mineração">SABER MAIS</a>
           </div>
         </div>
       </section>

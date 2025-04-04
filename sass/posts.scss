@@ -1,6 +1,7 @@
 @use "./partials/reset";
 @use "./partials/header";
 @use "./partials/footer";
+@use "./partials/variables";
 
 main {
   .container {
@@ -16,6 +17,10 @@ main {
     h2 {
       font-size: 2rem;
     }
+    .date {
+      color: variables.$fifth-color;
+    }
+
     p {
       margin-top: 30px;
       font-size: 1.1rem;
