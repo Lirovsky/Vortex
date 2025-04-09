@@ -8,6 +8,7 @@ body {
 
 header {
   height: 80px;
+  background: #f3f3f3;
 }
 header .container {
   width: 80%;
@@ -28,7 +29,7 @@ header .container .logo img {
   height: 50%;
 }
 header .container .logo h1 {
-  color: #222;
+  color: #1a1a1a;
 }
 header .container .navbar {
   display: flex;
@@ -109,7 +110,7 @@ header .container .mobile-menu {
     text-decoration: none;
     display: block;
     padding: 10px;
-    color: #fff;
+    color: #f3f3f3;
     outline: none;
     border: 2px solid transparent;
     border-radius: 5px;
@@ -118,7 +119,7 @@ header .container .mobile-menu {
     color: #e0e0e0;
   }
   header .container .mobile-menu ul li a:focus {
-    border: 2px solid #fff;
+    border: 2px solid #f3f3f3;
   }
   header .container .display {
     display: block;
@@ -128,7 +129,7 @@ header .container .mobile-menu {
 
 .section1 {
   background-image: repeating-linear-gradient(-45deg, black, black 35%, #7f9191 35%, #7f9191 65%, black 65%);
-  color: #fff;
+  color: #f3f3f3;
   height: calc(100vh - 80px);
 }
 @media (max-width: 1024px) {
@@ -214,6 +215,7 @@ header .container .mobile-menu {
   outline: none;
   border: none;
   padding: 10px;
+  background: #f3f3f3;
 }
 .section1 .container .right form input::placeholder,
 .section1 .container .right form textarea::placeholder {

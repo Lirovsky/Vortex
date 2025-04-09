@@ -11,7 +11,7 @@
     variables.$fifth-color 65%,
     black 65%
   );
-  color: #fff;
+  color: variables.$white-color;
   height: calc(100vh - 80px);
 
   @media (max-width: 1024px) {
@@ -99,6 +99,7 @@
           outline: none;
           border: none;
           padding: 10px;
+          background: variables.$white-color;
 
           &::placeholder {
             color: rgb(186, 186, 186);

@@ -1,8 +1,10 @@
 @use "./partials/reset";
 @use "./partials/header";
 @use "./partials/footer";
+@use "./partials/variables";
 
 main {
+  background: variables.$white-color;
   .container {
     width: 80%;
     margin: auto;

@@ -4,6 +4,7 @@
 @use "./partials/variables";
 
 main {
+  background: variables.$white-color;
   .container {
     width: 80%;
     margin: auto;
@@ -18,7 +19,7 @@ main {
       font-size: 2rem;
     }
     .date {
-      color: variables.$fifth-color;
+      color: variables.$third-color;
     }
 
     p {

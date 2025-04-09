@@ -32,7 +32,7 @@
 
   .text {
     width: 55%;
-    color: #fff;
+    color: variables.$white-color;
 
     @media (max-width: 560px) {
       width: 80%;
@@ -155,7 +155,7 @@
     variables.$primary-color 50%,
     variables.$second-color 50%
   );
-  color: #fff;
+  color: variables.$white-color;
 
   .container {
     @include container;
@@ -239,10 +239,10 @@
       gap: 10px;
 
       .title {
-        font-size: 2rem;
-        color: #fff;
+        font-size: 1.8rem;
+        color: variables.$white-color;
         background-color: variables.$third-color;
-        padding-left: 2rem;
+        padding: 0 2rem;
       }
       .image {
         width: 100%;
@@ -300,7 +300,7 @@
       background: variables.$second-color;
       color: #000;
       &:hover {
-        color: #fff;
+        color: variables.$white-color;
         background: variables.$fourth-color;
       }
     }
@@ -345,7 +345,7 @@
       }
 
       p {
-        color: #fff;
+        color: variables.$white-color;
         font-size: 1.2rem;
         font-weight: 200;
         line-height: 35px;
@@ -406,7 +406,7 @@
 }
 
 .section7 {
-  background-color: #000;
+  background-color: variables.$black-color;
 
   .container {
     @include container;
@@ -435,7 +435,7 @@
       }
     }
     .text {
-      color: #fff;
+      color: variables.$white-color;
 
       img {
         width: 4rem;
@@ -502,11 +502,11 @@
       a {
         @include button;
         background: variables.$fourth-color;
-        color: #fff;
+        color: variables.$white-color;
 
         &:hover {
           background: variables.$fifth-color;
-          color: #fff;
+          color: variables.$white-color;
         }
       }
     }
@@ -514,7 +514,7 @@
 }
 
 .section9 {
-  background-color: #fff;
+  background-color: variables.$white-color;
 
   .container {
     @include container;
@@ -558,11 +558,11 @@
       a {
         @include button;
         background: variables.$fifth-color;
-        color: #fff;
+        color: variables.$white-color;
 
         &:hover {
           background: variables.$fourth-color;
-          color: #fff;
+          color: variables.$white-color;
         }
       }
     }

@@ -8,6 +8,7 @@ body {
 
 header {
   height: 80px;
+  background: #f3f3f3;
 }
 header .container {
   width: 80%;
@@ -28,7 +29,7 @@ header .container .logo img {
   height: 50%;
 }
 header .container .logo h1 {
-  color: #222;
+  color: #1a1a1a;
 }
 header .container .navbar {
   display: flex;
@@ -109,7 +110,7 @@ header .container .mobile-menu {
     text-decoration: none;
     display: block;
     padding: 10px;
-    color: #fff;
+    color: #f3f3f3;
     outline: none;
     border: 2px solid transparent;
     border-radius: 5px;
@@ -118,7 +119,7 @@ header .container .mobile-menu {
     color: #e0e0e0;
   }
   header .container .mobile-menu ul li a:focus {
-    border: 2px solid #fff;
+    border: 2px solid #f3f3f3;
   }
   header .container .display {
     display: block;
@@ -179,7 +180,7 @@ footer .footer-bottom p {
 }
 .section1 .text {
   width: 55%;
-  color: #fff;
+  color: #f3f3f3;
 }
 @media (max-width: 560px) {
   .section1 .text {
@@ -289,7 +290,7 @@ footer .footer-bottom p {
   height: auto;
   padding: 50px 0;
   background-image: linear-gradient(to right, #333333 0, #333333 50%, #9abfbf 50%);
-  color: #fff;
+  color: #f3f3f3;
 }
 .section3 .container {
   width: 90%;
@@ -375,10 +376,10 @@ footer .footer-bottom p {
   gap: 10px;
 }
 .section4 .container .left .title {
-  font-size: 2rem;
-  color: #fff;
+  font-size: 1.8rem;
+  color: #f3f3f3;
   background-color: #aea16a;
-  padding-left: 2rem;
+  padding: 0 2rem;
 }
 .section4 .container .left .image {
   width: 100%;
@@ -439,7 +440,7 @@ footer .footer-bottom p {
   color: #000;
 }
 .section4 .button a:hover {
-  color: #fff;
+  color: #f3f3f3;
   background: #b4cfcf;
 }
 
@@ -479,7 +480,7 @@ footer .footer-bottom p {
   font-weight: 400;
 }
 .section5 .container .card p {
-  color: #fff;
+  color: #f3f3f3;
   font-size: 1.2rem;
   font-weight: 200;
   line-height: 35px;
@@ -534,7 +535,7 @@ footer .footer-bottom p {
 }
 
 .section7 {
-  background-color: #000;
+  background-color: #1a1a1a;
 }
 .section7 .container {
   width: 90%;
@@ -561,7 +562,7 @@ footer .footer-bottom p {
   }
 }
 .section7 .container .text {
-  color: #fff;
+  color: #f3f3f3;
 }
 .section7 .container .text img {
   width: 4rem;
@@ -625,15 +626,15 @@ footer .footer-bottom p {
   transition: all 0.5s;
   cursor: pointer;
   background: #b4cfcf;
-  color: #fff;
+  color: #f3f3f3;
 }
 .section8 .container .text a:hover {
   background: #7f9191;
-  color: #fff;
+  color: #f3f3f3;
 }
 
 .section9 {
-  background-color: #fff;
+  background-color: #f3f3f3;
 }
 .section9 .container {
   width: 90%;
@@ -679,11 +680,11 @@ footer .footer-bottom p {
   transition: all 0.5s;
   cursor: pointer;
   background: #7f9191;
-  color: #fff;
+  color: #f3f3f3;
 }
 .section9 .container .text a:hover {
   background: #b4cfcf;
-  color: #fff;
+  color: #f3f3f3;
 }
 
 /*# sourceMappingURL=style.css.map */

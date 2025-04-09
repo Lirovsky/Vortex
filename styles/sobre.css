@@ -8,6 +8,7 @@ body {
 
 header {
   height: 80px;
+  background: #f3f3f3;
 }
 header .container {
   width: 80%;
@@ -28,7 +29,7 @@ header .container .logo img {
   height: 50%;
 }
 header .container .logo h1 {
-  color: #222;
+  color: #1a1a1a;
 }
 header .container .navbar {
   display: flex;
@@ -109,7 +110,7 @@ header .container .mobile-menu {
     text-decoration: none;
     display: block;
     padding: 10px;
-    color: #fff;
+    color: #f3f3f3;
     outline: none;
     border: 2px solid transparent;
     border-radius: 5px;
@@ -118,7 +119,7 @@ header .container .mobile-menu {
     color: #e0e0e0;
   }
   header .container .mobile-menu ul li a:focus {
-    border: 2px solid #fff;
+    border: 2px solid #f3f3f3;
   }
   header .container .display {
     display: block;
@@ -204,7 +205,7 @@ footer .footer-bottom p {
 }
 
 .section2 {
-  background-color: #000;
+  background-color: #1a1a1a;
 }
 .section2 .container {
   width: 90%;
@@ -221,7 +222,7 @@ footer .footer-bottom p {
   }
 }
 .section2 .container .text {
-  color: #fff;
+  color: #f3f3f3;
 }
 .section2 .container .text img {
   width: 4rem;
